@@ -40,6 +40,13 @@ public class BlogApiController {
     }
 
 
+    @GetMapping("/api/articles/{id}")
+    public ResponseEntity<ArticleResponse> findArticle(@PathVariable long id) {
+        Article2 article2 = blogService.findById(id);
+
+        return ResponseEntity.ok()
+                .body(new ArticleResponse(article2));
+    }
 
 }
 
