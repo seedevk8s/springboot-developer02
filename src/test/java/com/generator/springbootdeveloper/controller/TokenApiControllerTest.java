@@ -71,7 +71,7 @@ public class TokenApiControllerTest {
         CreateAccessTokenRequest request = new CreateAccessTokenRequest();
         request.setRefreshToken(refreshToken);
 
-        final String requestBody = objectMapper.writeValueAsString(request);9
+        final String requestBody = objectMapper.writeValueAsString(request);
 
         // when
         ResultActions resultActions = mockMvc.perform(post(url)
