@@ -14,3 +14,7 @@ spring:
   h2:           # 2) H2 콘솔 활성화
     console:
       enabled: true
+
+jwt:
+  issuer: hojinchu99@gmail.com
+  secret_key: finally-springboot
